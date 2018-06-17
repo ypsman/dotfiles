@@ -1,0 +1,45 @@
+execute pathogen#infect()
+call pathogen#helptags()
+
+" Theme
+colorscheme solarized
+set background=dark             " dark background
+
+" vim settings
+syntax enable
+set encoding=utf8               " set utf8 en_US as standard
+set number                      " show line number
+set autoindent                  " autoindent aka new line
+set mouse=a                     " enable mouse
+set showcmd                     " Show (partial) command in status line. 
+" tabulator, use :retab to change all existing tabs to spaces
+set tabstop=4                   " max tab length
+set shiftwidth=4                " indenting is 4 spaces
+set expandtab                   " change tab to sapces
+set smarttab
+" lines
+set nowrap                      " Dont wrap Lines
+
+
+" searching
+set ignorecase                  " ignore case for searching
+set smartcase                   " no ignorecase if Uppercase char present
+set incsearch                   " incremental search
+set showmatch                   " match jump
+set hlsearch                    " highlight Search
+
+" mappings
+inoremap ( ()<left>
+inoremap [ []<left>
+inoremap { {}<left>
+
+" netrw Config
+let g:netrw_banner = 0          " disable tree banner
+let g:netrw_winsize = 25        " window size of tree in %
+let g:netrw_browse_split = 4    " split style 
+let g:netrw_altv = 1            " open window on right side 
+
+
+" NERDTree plugin
+map <C-n> :NERDTreeToggle<CR>           " toggle with ctrl-n
+let NERDTreeMapOpenInTab='<ENTER>'      " Open file with Enter in new Tab
