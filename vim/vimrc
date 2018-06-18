@@ -32,6 +32,7 @@ set hlsearch                    " highlight Search
 inoremap ( ()<left>
 inoremap [ []<left>
 inoremap { {}<left>
+inoremap < <><left>
 
 " netrw Config
 let g:netrw_banner = 0          " disable tree banner
