@@ -2,8 +2,8 @@ execute pathogen#infect()
 call pathogen#helptags()
 
 " Theme
-colorscheme solarized
-set background=dark             " dark background
+"colorscheme solarized
+" set background=dark             " dark background
 
 " vim settings
 syntax enable
@@ -40,6 +40,7 @@ let g:netrw_winsize = 25        " window size of tree in %
 let g:netrw_browse_split = 4    " split style 
 let g:netrw_altv = 1            " open window on right side 
 
+hi Normal guibg=gray19
 
 " NERDTree plugin
 map <C-n> :NERDTreeToggle<CR>           " toggle with ctrl-n
